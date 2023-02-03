@@ -16,15 +16,8 @@ sudo pip3 install meson mako jinja2 ply pyyaml
 3. Initialize repo:
 
 ```
-repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r35
-curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi4.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/manifest_brcm_rpi4.xml
-```
-
-You can also reduce download size by creating a shallow clone and removing unneeded projects (optional):
-
-```
 repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r35 --depth=1
-curl --create-dirs -L -o .repo/local_manifests/remove_projects.xml -O -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-13.0/remove_projects.xml
+git clone https://github.com/grapeup/aaos_local_manifest.git .repo/local_manifests
 ```
 
 4. Sync source code:
@@ -38,7 +31,7 @@ repo sync
 ```
 . build/envsetup.sh
 lunch aosp_rpi4-userdebug
-make bootimage systemimage vendorimage -j$(nproc)
+make bootimage systemimage vendorimage
 ```
 
 6. Make flashable image:
