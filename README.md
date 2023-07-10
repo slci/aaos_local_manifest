@@ -17,7 +17,7 @@ sudo pip3 install meson mako jinja2 ply pyyaml dataclasses
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r61 --depth=1
-git clone https://github.com/grapeup/aaos_local_manifest.git .repo/local_manifests
+git clone https://github.com/slci/aaos_local_manifest.git .repo/local_manifests
 ```
 
 4. Sync source code:
