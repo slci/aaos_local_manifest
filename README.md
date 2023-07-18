@@ -1,4 +1,4 @@
-### Device specific configuration to build AOSP Android 13 for Raspberry Pi 4.
+### Device specific configuration to build Automotive AOSP Android 13 with RSO 2 powered VHAL for Raspberry Pi 4.
 
 ***
 
@@ -17,7 +17,7 @@ sudo pip3 install meson mako jinja2 ply pyyaml dataclasses
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r61 --depth=1
-git clone https://github.com/slci/aaos_local_manifest.git .repo/local_manifests
+git clone https://github.com/SpyroSoft-Synergy/roscar_local_manifest.git .repo/local_manifests
 ```
 
 4. Sync source code:
@@ -46,16 +46,5 @@ Also look into [Linux kernel build instructions](https://github.com/raspberry-va
 
 ### Issues:
 
-- [Android](https://github.com/raspberry-vanilla/android_local_manifest/issues)
-- [Linux kernel](https://github.com/raspberry-vanilla/android_kernel_manifest/issues)
+- [roscar_local_manifest](https://github.com/SpyroSoft-Synergy/roscar_local_manifest/issues)
 
-***
-
-### Wiki:
-
-- [Audio](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Audio)
-- [DSI display](https://github.com/raspberry-vanilla/android_local_manifest/wiki/DSI-display)
-- [HDMI display](https://github.com/raspberry-vanilla/android_local_manifest/wiki/HDMI-display)
-- [Interfaces](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Interfaces)
-- [USB boot](https://github.com/raspberry-vanilla/android_local_manifest/wiki/USB-boot)
-- [Video decoding](https://github.com/raspberry-vanilla/android_local_manifest/wiki/Video-decoding)

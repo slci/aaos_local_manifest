@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="grapeup" fetch="https://github.com/" />
+  <remote name="grapeup" fetch="https://github.com/grapeup/" />
   <remote name="raspberry-vanilla" fetch="https://github.com/raspberry-vanilla/" />
   <remote name="spyrosoft-synergy" fetch="https://github.com/SpyroSoft-Synergy/" />
 
